@@ -136,3 +136,5 @@ The website is fully responsive and optimized for:
 - SEO optimization
 - Performance optimization
 - Clean code structure
+
+Support Developer : [Paypal](https://paypal.me/giraldi07?country.x=ID&locale.x=id_ID)
