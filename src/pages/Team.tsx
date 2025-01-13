@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Twitter } from 'lucide-react';
 import GlassCard from '../components/GlassCard';
@@ -48,7 +47,7 @@ const Team = () => {
   ];
 
   return (
-    <div className="pt-24 min-h-screen">
+    <div className="pt-40 min-h-screen">
       {/* Hero Section */}
       <div className="max-w-7xl mx-auto px-4 mb-20">
         <motion.div

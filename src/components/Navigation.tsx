@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 import { Building2, Home, Users, Briefcase, Phone, Menu, X } from 'lucide-react';
@@ -54,7 +54,7 @@ const Navigation = () => {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex justify-between items-center">
-            <Link to="/" className="text-white text-xl font-bold">TechVision</Link>
+            <Link to="/" className="text-white text-xl font-bold">BlossomBiz</Link>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

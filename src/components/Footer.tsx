@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Instagram, Linkedin, Github, Mail } from 'lucide-react';
@@ -35,7 +34,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold text-white mb-4">TechVision</h3>
+            <h3 className="text-xl font-bold text-white mb-4">BlossomBiz</h3>
             <p className="text-white/80 mb-4">
               Transforming ideas into digital excellence. Your trusted partner in technological innovation.
             </p>
@@ -115,7 +114,7 @@ const Footer = () => {
 
         <div className="border-t border-white/10 pt-8 text-center">
           <p className="text-white/80">
-            © {new Date().getFullYear()} TechVision. All rights reserved.
+            © {new Date().getFullYear()} giraldi07. All rights reserved.
           </p>
         </div>
       </GlassCard>
