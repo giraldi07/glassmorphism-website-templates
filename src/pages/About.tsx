@@ -62,7 +62,7 @@ const About = () => {
   ];
 
   return (
-    <div className="pt-40 md:pt-24 min-h-screen">
+    <div className="pt-40 md:pt-30 min-h-screen">
       {/* Hero Section */}
       <div className="max-w-7xl mx-auto px-4 mb-12 md:mb-20">
         <motion.div
