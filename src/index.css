@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 0 0% 100%;
+  }
+
+  body {
+    @apply overflow-x-hidden;
+  }
+}
+
+.glassmorphism {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white/20 dark:bg-black/20 rounded-full;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive text adjustments */
+@media (max-width: 640px) {
+  h1 {
+    @apply text-4xl !important;
+  }
+  h2 {
+    @apply text-2xl !important;
+  }
+  h3 {
+    @apply text-xl !important;
+  }
+  p {
+    @apply text-base !important;
+  }
+}
+
+/* Glass effect variations */
+.glass-light {
+  @apply backdrop-blur-lg bg-white/30 dark:bg-white/10;
+}
+
+.glass-dark {
+  @apply backdrop-blur-lg bg-black/30 dark:bg-white/10;
+}
+
+/* Responsive padding and margins */
+.section-padding {
+  @apply py-12 sm:py-16 md:py-20 lg:py-24;
+}
+
+.container-padding {
+  @apply px-4 sm:px-6 lg:px-8;
+}
+
+/* Responsive grid layouts */
+.responsive-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6;
+}
+
+/* Animation classes */
+.hover-scale {
+  @apply transition-transform duration-200 hover:scale-105;
+}
+
+.fade-in {
+  @apply animate-fade-in;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
